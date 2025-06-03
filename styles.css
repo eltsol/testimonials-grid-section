@@ -1,0 +1,122 @@
+:root {
+  /* Color Palette */
+  --color-purple-50: hsl(260, 100%, 95%);
+  --color-purple-300: hsl(264, 82%, 80%);
+  --color-purple-500: hsl(263, 55%, 52%);
+
+  --color-black: hsl(0, 0%, 7%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-100: hsl(214, 17%, 92%);
+  --color-grey-200: hsl(0, 0%, 81%);
+  --color-grey-400: hsl(224, 10%, 45%);
+  --color-grey-500: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(219, 29%, 14%);
+
+  /* Typography */
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+  --font-size-base: 13px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-line-height-base: 1.4;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+
+  /* Layout */
+  --border-radius: 8px;
+  --border-radius-circular: 50%;
+  --box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-grey-100);
+  line-height: var(--font-line-height-base);
+}
+
+.card-testimonial {
+  height: 100%;
+  position: relative;
+  padding:var(--spacing-lg);
+  color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.card-testimonial h4 {
+  z-index: 1000;
+  position: relative;
+}
+
+.quoatation {
+  position: absolute;
+  right: 65px;
+  top: 0;
+}
+
+.card-testimonial--purple {
+  background-color: var(--color-purple-500);
+}
+
+.card-testimonial--white {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.card-testimonial--blue {
+  background-color: var(--color-grey-500);
+}
+
+.card-testimonial--dark-blue {
+  background-color: var(--color-dark-blue);
+}
+
+.image-testimonial {
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+  border: 2px solid var(--color-purple-50);
+  border-radius: var(--border-radius-circular);
+}
+
+.name {
+  font-weight: var(--font-weight-semibold);
+}
+
+.description {
+  opacity: 0.9;
+}
+
+.content {
+  opacity: 0.9;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-sm);
+}
